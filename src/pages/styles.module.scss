@@ -1,0 +1,47 @@
+@import "../assets/variables.scss";
+
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.noimages {
+    width: 100%;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.dropzone {
+    border: 1px dashed #CCC;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+    p {
+        font-size: 1.25rem;
+        span {
+            font-size: 1rem;
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    button {
+        margin: 0 0.5rem 1rem;
+        border-radius: 0.5rem;
+        border: 0;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    .selected {
+        background: $linkColour;
+        color: #FFFFFF;
+    }
+}

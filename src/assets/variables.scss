@@ -1,0 +1,14 @@
+$linkColour: #004ebc;
+
+
+@mixin breaking($class) {
+    @if $class == tiny {
+        @media screen and (max-width: 32rem) { @content; }
+    }
+    @if $class == small {
+        @media screen and (min-width: 32rem) and (max-width: 48rem) { @content; }
+    }
+    @if $class == medium {
+        @media screen and (min-width: 48rem) and (max-width: 64rem) { @content; }
+    }
+}
